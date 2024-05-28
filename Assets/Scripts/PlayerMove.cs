@@ -57,6 +57,7 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             IsJumping = false;
+
         }
     }
 
@@ -67,7 +68,7 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.tag == "item")
         {
             Item item = collision.gameObject.GetComponent<Item>();
-            switch (item.type)
+            switch (item.name)
             {
                 case "Item":
                     break;
@@ -85,32 +86,5 @@ public class PlayerMove : MonoBehaviour
             Finish = true;
 
         }
-
-        else if(collision.gameObject.tag == "Telepo")
-        {
-            ChangeMap();
-        }
-
-        Target.SetActive(true);
     }
-
-    void ChangeMap()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-        
-        if (currentSceneIndex == 0)
-        {
-            SceneManager.LoadScene("Stage1");
-        }
-        else if (currentSceneIndex == 1)
-        {
-            SceneManager.LoadScene("Stage0");
-        }
-        
-    }
-
-
-
-
 }
