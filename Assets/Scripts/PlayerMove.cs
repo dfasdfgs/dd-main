@@ -68,7 +68,7 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.tag == "item")
         {
             Item item = collision.gameObject.GetComponent<Item>();
-            switch (item.name)
+            switch (item.tag)
             {
                 case "Item":
                     break;

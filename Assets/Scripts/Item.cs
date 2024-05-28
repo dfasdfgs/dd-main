@@ -5,7 +5,6 @@ using UnityEngine.U2D.Animation;
 
 public class Item : MonoBehaviour
 {
-    float timer;
     int waitingTime;
 
     public SpriteRenderer Img_Renderer;
@@ -13,8 +12,7 @@ public class Item : MonoBehaviour
 
     void Start()
     {
-        timer = 0.0f;
-        waitingTime = 5;
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -27,11 +25,6 @@ public class Item : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime;
 
-        if (timer > waitingTime)
-        {
-            timer = 0;
-        }
     }
 }

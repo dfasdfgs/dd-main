@@ -1535,7 +1535,6 @@ GameObject:
   - component: {fileID: 1543517781}
   - component: {fileID: 1543517780}
   - component: {fileID: 1543517783}
-  - component: {fileID: 1543517782}
   m_Layer: 0
   m_Name: Item
   m_TagString: item
@@ -1604,26 +1603,12 @@ Transform:
   m_GameObject: {fileID: 1543517779}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.85, y: 4.56, z: 0}
+  m_LocalPosition: {x: 1.55, y: 0.4, z: 0}
   m_LocalScale: {x: 0.37028268, y: 1.6090432, z: 0.62877}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1543517782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543517779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a30fa55b8bac334182c649b46aff51c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Img_Renderer: {fileID: 0}
-  Sprite01: {fileID: 0}
 --- !u!70 &1543517783
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
