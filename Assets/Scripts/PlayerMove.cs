@@ -68,15 +68,14 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.tag == "item")
         {
             Item item = collision.gameObject.GetComponent<Item>();
-            switch (item.tag)
+            switch (item.type)
             {
-                case "Item":
+                case "item":
                     break;
 
             }
-
-            Destroy(collision.gameObject);
             Getitem = true;
+            Destroy(collision.gameObject);
         }
 
         else if (collision.gameObject.tag == "Finish")
